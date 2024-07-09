@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>文件上傳</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 1.5rem; /* 字體變大 */
+        margin: 0;
+        background-color: #f8f9fa;
+      }
+      form, .button-container {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      h1 {
+        margin-bottom: 1rem;
+      }
+      div {
+        margin-bottom: 1rem;
+      }
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+      input[type="file"] {
+        font-size: 1rem;
+      }
+      button {
+        font-size: 1.25rem; /* 字體變大 */
+        background-color: #007bff; /* 按鍵藍色 */
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <h1>Upload PDF and Question File</h1>
+        <div>
+          <label for="pdf_files">Select PDF Document</label>
+          <input type="file" id="pdf_files" name="pdf_files" multiple>
+        </div>
+        <div>
+          <label for="question_file">Select Question Excel File</label>
+          <input type="file" id="question_file" name="question_file">
+        </div>
+        <button type="submit">上傳</button>
+      </form>
+      <div class="button-container">
+        <button onclick="window.location.href='/hammett'">生成 Hammett 圖</button>
+      </div>
+    </div>
+  </body>
+</html>

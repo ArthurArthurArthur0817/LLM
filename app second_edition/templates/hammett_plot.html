@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hammett Plot</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 1.5rem; /* 字體變大 */
+        margin: 0;
+        background-color: #f8f9fa;
+      }
+      form {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      h1 {
+        margin-bottom: 1rem;
+      }
+      div {
+        margin-bottom: 1rem;
+      }
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+      select {
+        font-size: 1rem;
+      }
+      button {
+        font-size: 1.25rem; /* 字體變大 */
+        background-color: #007bff; /* 按鍵藍色 */
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/plot" method="post" enctype="multipart/form-data">
+      <h1>生成 Hammett 圖</h1>
+      <div>
+        <label for="y_axis">選擇 y 軸數據</label>
+        <select id="y_axis" name="y_axis">
+          <option value="log_kx_kh">log(KX/KH)</option>
+          <option value="kx_kh">KX/KH</option>
+          <option value="rate">Rate</option>
+        </select>
+      </div>
+      <div>
+        <label for="plot_file">上傳 Plot 文件</label>
+        <input type="file" id="plot_file" name="plot_file">
+      </div>
+      <button type="submit">生成圖表</button>
+    </form>
+  </body>
+</html>
