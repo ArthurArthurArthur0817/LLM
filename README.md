@@ -13,7 +13,9 @@ The main goal of this project is to facilitate the analysis of chemistry-related
 
 >yourproject/
 ├── app.py
+>
 ├── x.py
+
 ├── y.xlsx
 └── z/
     ├── file1.txt
