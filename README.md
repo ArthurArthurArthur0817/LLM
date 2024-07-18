@@ -28,6 +28,9 @@ minstral-7B-instruct.py
     os.environ["HUGGINGFACEHUB_API_TOKEN"] = "Your HuggingFace Access Token"
 
 ### File
+
+Ensure that your files and folders are organized as follows:
+
  ```
 project/
 ├── app.py
