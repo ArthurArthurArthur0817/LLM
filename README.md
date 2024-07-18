@@ -10,6 +10,19 @@ The main goal of this project is to facilitate the analysis of chemistry-related
 - Downloading graph data for further analysis.
 - Using the downloaded data in conjunction with the paper and specified question for detailed analysis and insight generation.
 
+
+yourproject/
+├── app.py
+├── x.py
+├── y.xlsx
+└── z/
+    ├── file1.txt
+    ├── file2.csv
+    └── subfolder/
+        └── file3.json
+
+
+
 ## QA
 ### First edition
 [mistralaiMistral-7B-Instruct-v0.1](https://github.com/ArthurArthurArthur0817/LLM-RAG/blob/main/QA(mistralaiMistral-7B-Instruct-v0.1)_Dennis.docx)
