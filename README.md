@@ -10,16 +10,21 @@ The main goal of this project is to facilitate the analysis of chemistry-related
 - Downloading graph data for further analysis.
 - Using the downloaded data in conjunction with the paper and specified question for detailed analysis and insight generation.
 
+
+## File
  ```
 project
 ├── app.py
-├── x.py
-├── y.xlsx
-└── z/
-    ├── file1.txt
-    ├── file2.csv
-    └── subfolder/
-        └── file3.json
+├── gemini.py
+├── mistral-7B-instruct.py
+├── hammett_plot.py
+├── Table_1.xlsx
+└── uploads/
+└── templates/
+    ├── hammett_plot.html
+    ├── index.html
+    ├── plot_result.html
+    └── result.html
 ```
 
 
