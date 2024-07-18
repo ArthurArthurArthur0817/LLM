@@ -11,11 +11,9 @@ The main goal of this project is to facilitate the analysis of chemistry-related
 - Using the downloaded data in conjunction with the paper and specified question for detailed analysis and insight generation.
 
  ```
->yourproject/
+project
 ├── app.py
->
 ├── x.py
-
 ├── y.xlsx
 └── z/
     ├── file1.txt
