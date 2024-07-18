@@ -15,6 +15,10 @@ The main goal of this project is to facilitate the analysis of chemistry-related
 
     pip install -r requirements.txt
 
+**STEP 2**
+
+    api_key = 'Your  Gemini API KEY'
+
 
 ### File
  ```
