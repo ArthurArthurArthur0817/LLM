@@ -6,12 +6,7 @@ import re
 import os
 import pandas as pd
 
-def install_requirements():
-    try:
-        subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
-    except subprocess.CalledProcessError as e:
-        print(f"An error occurred while installing requirements: {e}")
-        sys.exit(1)
+
 
 api_key = 'Your API KEY'
 genai.configure(api_key=api_key)
