@@ -12,7 +12,7 @@ The main goal of this project is to facilitate the analysis of chemistry-related
 ## Installation
 
 **STEP 1**
->pip install -r requirements.txt
+    pip install -r requirements.txt
 
 
 ### File
