@@ -11,7 +11,8 @@ The main goal of this project is to facilitate the analysis of chemistry-related
 
 ## Installation
 
-**s**
+**STEP 1**
+>pip install -r requirements.txt
 
 
 ### File
