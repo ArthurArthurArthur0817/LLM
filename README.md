@@ -53,6 +53,7 @@ project/
 
 ### Usage Example
 Here is a simple example to help you get started with using the project:
+
 [Example](https://github.com/ArthurArthurArthur0817/LLM-RAG/blob/main/Example.pdf)
 
 
