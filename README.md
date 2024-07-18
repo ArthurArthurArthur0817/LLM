@@ -47,7 +47,7 @@ project/
 ```
 
 ### User Guide
-[Project Intoduction/Demonstration](https://youtu.be/eci8HjQMh_I)
+[Project Intoduction/Demonstration Video](https://youtu.be/eci8HjQMh_I)
 
 
 ## QA
