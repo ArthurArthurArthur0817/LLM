@@ -50,6 +50,12 @@ project/
 [Project Intoduction/Demonstration Video](https://youtu.be/eci8HjQMh_I)
 
 
+
+### Usage Example
+Here is a simple example to help you get started with using the project:
+
+
+
 ## QA
 ### First edition
 [mistralaiMistral-7B-Instruct-v0.1](https://github.com/ArthurArthurArthur0817/LLM-RAG/blob/main/QA(mistralaiMistral-7B-Instruct-v0.1)_Dennis.docx)
