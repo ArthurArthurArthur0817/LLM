@@ -16,6 +16,7 @@ The main goal of this project is to facilitate the analysis of chemistry-related
     pip install -r requirements.txt
 
 **STEP 2**
+
 To ensure proper functionality of the program, please replace the placeholder data with your own API keys and access tokens in the following lines of code:
 
 gemini.py
