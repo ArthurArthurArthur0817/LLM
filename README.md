@@ -17,9 +17,13 @@ The main goal of this project is to facilitate the analysis of chemistry-related
 
 **STEP 2**
 To ensure proper functionality of the program, please replace the placeholder data with your own API keys and access tokens in the following lines of code:
+
 gemini.py
+
     api_key = 'Your Gemini API KEY'
+    
 minstral-7B-instruct.py
+
     os.environ["HUGGINGFACEHUB_API_TOKEN"] = "Your HuggingFace Access Token"
 
 ### File
