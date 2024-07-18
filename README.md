@@ -13,13 +13,13 @@ The main goal of this project is to facilitate the analysis of chemistry-related
 
 ## File
  ```
-project
+project/
 ├── app.py
 ├── gemini.py
 ├── mistral-7B-instruct.py
 ├── hammett_plot.py
 ├── Table_1.xlsx
-└── uploads/
+├── uploads/
 └── templates/
     ├── hammett_plot.html
     ├── index.html
