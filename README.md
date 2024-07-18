@@ -7,4 +7,4 @@
 [microsoftPhi-3-mini-4k-instruct](https://github.com/ArthurArthurArthur0817/LLM-RAG/blob/main/QA(microsoftPhi-3-mini-4k-instruct)_Dennis.docx)
 
 
-`print("Hello, World!")`
+
