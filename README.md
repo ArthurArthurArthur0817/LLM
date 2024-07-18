@@ -1,8 +1,14 @@
-# LLM-RAG
-
 # Hammett Plot Data Analysis and Visualization Tool
->aaa
->bb
+This project leverages a model to analyze chemistry-related papers and generate answers to specified questions based on the paper's content.
+
+Project Overview
+The main goal of this project is to facilitate the analysis of chemistry-related literature. Users can provide specified papers, questions and data, the program will generate answers by comprehensively reading and analyzing the paper.
+
+Key features include:
+
+- Generating Hammett plot graphs based on user-selected substituents.
+- Downloading graph data for further analysis.
+- Using the downloaded data in conjunction with the paper and specified question for detailed analysis and insight generation.
 
 ## QA
 ### First edition
