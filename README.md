@@ -10,7 +10,7 @@ The main goal of this project is to facilitate the analysis of chemistry-related
 - Downloading graph data for further analysis.
 - Using the downloaded data in conjunction with the paper and specified question for detailed analysis and insight generation.
 
-
+'''
 >yourproject/
 ├── app.py
 >
