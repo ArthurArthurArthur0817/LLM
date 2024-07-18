@@ -1,5 +1,7 @@
 # LLM-RAG
 
+# Hammett Plot Data Analysis and Visualization Tool
+
 ## QA
 ### First edition
 [mistralaiMistral-7B-Instruct-v0.1](https://github.com/ArthurArthurArthur0817/LLM-RAG/blob/main/QA(mistralaiMistral-7B-Instruct-v0.1)_Dennis.docx)
