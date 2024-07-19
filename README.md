@@ -1,13 +1,17 @@
 # Hammett Plot Data Analysis and Visualization Tool
 
 ## Project Overview
-The main goal of this project is to facilitate the analysis of chemistry-related literature. Users can provide specified papers, questions and data, the program will generate answers by comprehensively reading and analyzing the paper.
+The main goal of this project is to facilitate the analysis of chemistry-related literature. Users can provide specified papers, questions, and data, and the program will generate answers by comprehensively reading and analyzing the paper. This project leverages the capabilities of the Gemini API and the mistralai/Mistral-7B-Instruct-v0.1 model to enhance data analysis and insights generation.
 
-## Key features 
+## Key Features
+- Generating Hammett plot graphs: Based on user-selected substituents.
+- Downloading graph data: For further analysis.
+- Detailed analysis and insight generation: Using the downloaded data in conjunction with the paper and specified questions.
+- Advanced AI Integration: Utilizes the Gemini API for enhanced data handling and mistralai/Mistral-7B-Instruct-v0.1 model for superior natural language processing capabilities.
 
-- Generating Hammett plot graphs based on user-selected substituents.
-- Downloading graph data for further analysis.
-- Using the downloaded data in conjunction with the paper and specified question for detailed analysis and insight generation.
+## Technology Integration
+- Gemini API: Utilized to generate the final answers and analysis based on the provided pages.
+- mistralai/Mistral-7B-Instruct-v0.1: Employed to identify relevant pages in the paper related to the questions and generate preliminary answers.
 
 ## Installation
 
