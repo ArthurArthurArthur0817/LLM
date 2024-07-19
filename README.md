@@ -72,7 +72,7 @@ project/
 
 **Data Analysis:**
 
-1.Use the JSON file obtained from the **"Chart Generation"** section, and add it to the column "data" in the question XLSX file. Refer to the file format in the "Usage Example" section below.
+1.Use the JSON file obtained from the **"Chart Generation"** section, and add it to the column "data" in the question XLSX file. Refer to the file format in the **"Usage Example"** section below.
 
 2.Upload the XLSX file containing both questions and data using the instructions provided in the **"Question Answering"** section.
 
