@@ -8,7 +8,7 @@ import pandas as pd
 
 
 
-api_key = 'AIzaSyBwV30tJyjUL1Zk7xMA9MILOUhIDvlbpvk'
+api_key = 'Your Gemini API KEY'
 genai.configure(api_key=api_key)
 
 def extract_text_from_pdf(pdf_file, page_numbers):
