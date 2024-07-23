@@ -3,6 +3,7 @@ Flask
 pandas
 numpy
 matplotlib
+openpyxl
 scikit-learn
 json
 warnings
