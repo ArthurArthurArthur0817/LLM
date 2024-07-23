@@ -37,7 +37,7 @@ class CFG:
     PDFs_paths = pdf_paths
     Embeddings_path = './faiss_index_py'
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "Your HuggingFace Access Token"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
 
 # 初始化语言模型
 llm = HuggingFaceEndpoint(
