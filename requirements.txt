@@ -5,12 +5,10 @@ numpy
 matplotlib
 openpyxl
 scikit-learn
-json
 warnings
 sys
-textwrap
-time
-re
+faiss-cpu
+pypdf
 torch
 langchain
 langchain_huggingface
