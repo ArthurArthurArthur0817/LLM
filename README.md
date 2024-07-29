@@ -43,9 +43,9 @@ project/
 ├── uploads/
 └── faiss_index_py/
     ├── index.faiss
-    ├── index.pkl
+    └── index.pkl
 └── __pycache__/
-    ├── hammett_plot.cpython-310.pyc
+    └── hammett_plot.cpython-310.pyc
 └── templates/
     ├── hammett_plot.html
     ├── index.html
