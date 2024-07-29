@@ -72,10 +72,12 @@ minstral-7B-instruct.py
     os.environ["HUGGINGFACEHUB_API_TOKEN"] = "Your HuggingFace Access Token"
 
 
+### Warning
 
+If your gemini.py displays "No text extracted from the provided sources for question:" during execution, please use the gemini.py from this link to replace the program.
+[gemini.py](https://github.com/ArthurArthurArthur0817/Educational-Big-Data/blob/main/gemini.py(for%20google%20VM))
 
-
-### User Guide
+## User Guide
 [Project Intoduction/Demonstration Video](https://youtu.be/eci8HjQMh_I)
 
 
