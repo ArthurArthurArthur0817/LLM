@@ -83,9 +83,9 @@ If your gemini.py displays "No text extracted from the provided sources for ques
 
 **Chart Generation:**
 
- 1.Select the Hammett Plot Generation section and click "Generate the plot" to begin.
+-1.Select the Hammett Plot Generation section and click "Generate the plot" to begin.
 
- 2.Enter the y-axis label and select whether to take the logarithm of the data. The x-axis will be fixed to the substituent's σp value.
+-2.Enter the y-axis label and select whether to take the logarithm of the data. The x-axis will be fixed to the substituent's σp value.
 
  3.Input the substituents and their corresponding values for plotting. Click "Add new row" to add more entries.
 
