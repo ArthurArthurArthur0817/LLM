@@ -41,6 +41,11 @@ project/
 ├── hammett_plot.py
 ├── Table_1.xlsx
 ├── uploads/
+└── faiss_index_py/
+    ├── index.faiss
+    ├── index.pkl
+└── __pycache__/
+    ├── hammett_plot.cpython-310.pyc
 └── templates/
     ├── hammett_plot.html
     ├── index.html
@@ -52,7 +57,7 @@ After confirming, make sure to execute the following command in the terminal to 
 
     pip install -r requirements.txt
 
-After executing, run the app.py file to get the web URL.
+After executing, run the **app.py** file to get the web URL.
 
 ### Using API Key
 
