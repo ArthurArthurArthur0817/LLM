@@ -15,25 +15,23 @@ The main goal of this project is to facilitate the analysis of chemistry-related
 
 ## Installation
 
-**STEP 1**
+### Using Terminal
+
+If you are running in the terminal, please execute the following commands:
+
+    git clone https://github.com/ArthurArthurArthur0817/LLM-RAG.git
+
+Next, execute the following commands to set up the environment:
 
     pip install -r requirements.txt
 
-**STEP 2**
+After completion, run the following program to get the web URL:
 
-To ensure proper functionality of the program, please replace the placeholder data with your own API keys and access tokens in the following lines of code:
+    python app.py
 
-gemini.py
+### Using an IDE
 
-    api_key = 'Your Gemini API KEY'
-    
-minstral-7B-instruct.py
-
-    os.environ["HUGGINGFACEHUB_API_TOKEN"] = "Your HuggingFace Access Token"
-
-### File
-
-Ensure that your files and folders are organized as follows:
+If you are using an IDE (such as VSCode, etc.), please download all the above files and ensure the files are placed in the following order:
 
  ```
 project/
@@ -49,6 +47,28 @@ project/
     ├── plot_result.html
     └── result.html
 ```
+
+After confirming, make sure to execute the following command in the terminal to set up the environment:
+
+    pip install -r requirements.txt
+
+After executing, run the app.py file to get the web URL.
+
+### Using API Key
+
+To ensure proper functionality of the program, please replace the placeholder data with your own API keys and access tokens in the following lines of code:
+
+gemini.py
+
+    api_key = 'Your Gemini API KEY'
+    
+minstral-7B-instruct.py
+
+    os.environ["HUGGINGFACEHUB_API_TOKEN"] = "Your HuggingFace Access Token"
+
+
+
+
 
 ### User Guide
 [Project Intoduction/Demonstration Video](https://youtu.be/eci8HjQMh_I)
