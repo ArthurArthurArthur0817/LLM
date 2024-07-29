@@ -74,7 +74,7 @@ minstral-7B-instruct.py
 
 ### Warning
 
-If your gemini.py displays "No text extracted from the provided sources for question:" during execution, please use the [gemini.py](https://github.com/ArthurArthurArthur0817/Educational-Big-Data/blob/main/gemini.py(for%20google%20VM)) from this link to replace the program.
+If your gemini.py displays "No text extracted from the provided sources for question:" during execution, please use the gemini.py from this [link](https://github.com/ArthurArthurArthur0817/Educational-Big-Data/blob/main/gemini.py(for%20google%20VM)) to replace the program.
 
 
 ## User Guide
