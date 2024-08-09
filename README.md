@@ -18,6 +18,7 @@ The main goal of this project is to facilitate the analysis of chemistry-related
 ### Using Terminal
 
 If you are running in the terminal, please execute the following commands:
+(Warning:If Git is not installed on your computer, please download Git from the following website to proceed with the next steps.)
 
     git clone https://github.com/ArthurArthurArthur0817/LLM-RAG.git
 
