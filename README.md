@@ -18,6 +18,7 @@ The main goal of this project is to facilitate the analysis of chemistry-related
 ### Using Terminal
 
 If you are running in the terminal, please execute the following commands:
+(Warning:If Git is not installed on your computer, please download Git from the following website to proceed with the next steps.)
 
     git clone https://github.com/ArthurArthurArthur0817/LLM-RAG.git
 
@@ -72,10 +73,12 @@ minstral-7B-instruct.py
     os.environ["HUGGINGFACEHUB_API_TOKEN"] = "Your HuggingFace Access Token"
 
 
+### Warning
+
+If your gemini.py displays "No text extracted from the provided sources for question:" during execution, please use the gemini.py from this [link](https://github.com/ArthurArthurArthur0817/Educational-Big-Data/blob/main/gemini.py(for%20google%20VM)) to replace the program.
 
 
-
-### User Guide
+## User Guide
 [Project Intoduction/Demonstration Video](https://youtu.be/eci8HjQMh_I)
 
 
@@ -105,6 +108,8 @@ minstral-7B-instruct.py
 
 2.Upload the XLSX file containing both questions and data using the instructions provided in the **"Question Answering"** section.
 
+## Demo
+
 ### Usage Example
 Here is a simple example to help you get started with using the project:
 
@@ -112,11 +117,7 @@ Here is a simple example to help you get started with using the project:
 
 
 
-## QA
-### First edition
-[mistralaiMistral-7B-Instruct-v0.1](https://github.com/ArthurArthurArthur0817/LLM-RAG/blob/main/QA(mistralaiMistral-7B-Instruct-v0.1)_Dennis.docx)
 
-[microsoftPhi-3-mini-4k-instruct](https://github.com/ArthurArthurArthur0817/LLM-RAG/blob/main/QA(microsoftPhi-3-mini-4k-instruct)_Dennis.docx)
 
 
 

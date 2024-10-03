@@ -16,7 +16,7 @@ import pandas as pd
 from sentence_transformers import SentenceTransformer
 from langchain.embeddings import HuggingFaceEmbeddings
 
-# 加入從命令行參數讀取文件路徑的代碼
+
 question_path = sys.argv[1]
 pdf_paths = sys.argv[2:]
 
@@ -37,9 +37,9 @@ class CFG:
     PDFs_paths = pdf_paths
     Embeddings_path = './faiss_index_py'
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "Your Hugging Face Access Token"
 
-# 初始化语言模型
+
 llm = HuggingFaceEndpoint(
     repo_id = CFG.model_name,
     max_new_tokens = CFG.max_new_tokens,
@@ -50,7 +50,7 @@ llm = HuggingFaceEndpoint(
     num_return_sequences = CFG.num_return_sequences
 )
 
-# 加载和分割PDF文件
+
 documents = []
 for pdf_path in CFG.PDFs_paths:
     print(f"Loading PDF: {pdf_path}")
@@ -65,12 +65,11 @@ text_splitter = RecursiveCharacterTextSplitter(
 texts = text_splitter.split_documents(documents)
 print(f"Split into {len(texts)} text chunks")
 
-# 创建 SentenceTransformer 模型
 model = SentenceTransformer(CFG.embeddings_model_repo)
 model_kwargs = {'device': 'cpu'} 
 encode_kwargs = {'normalize_embeddings': True}
 
-# 创建嵌入
+
 embeddings = HuggingFaceEmbeddings(
     model_name=CFG.embeddings_model_repo,
     model_kwargs=model_kwargs,
@@ -187,5 +186,5 @@ for index, row in data.iterrows():
 
 data.to_excel("answers.xlsx", index=False)
 
-# 输出读取到的Excel文件的内容
+
 print(data.head())

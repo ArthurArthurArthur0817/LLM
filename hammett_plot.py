@@ -27,10 +27,10 @@ def generate_hammett_plot(substituents, values, y_axis_label, log_transform, sig
         plt.xlabel(xlabel)
         plt.ylabel(ylabel)
 
-        # 绘制回归线
+       
         plt.plot(x_data, slope * np.array(x_data) + intercept, color='red')
 
-        # 显示回归线方程及R²值
+       
         equation_text = f'y = {slope:.2f}x + {intercept:.2f}\n$R^2$ = {r_squared:.4f}'
         plt.text(0.05, 0.85, equation_text, transform=plt.gca().transAxes, fontsize=12, verticalalignment='top', bbox=dict(facecolor='white', alpha=0.5))
 
@@ -41,20 +41,20 @@ def generate_hammett_plot(substituents, values, y_axis_label, log_transform, sig
 
         return plot_image_path
 
-    # 准备数据
+
     sigma = [sigma_values[sub] for sub in substituents]
 
-    # 转换数据类型
+   
     y_data = pd.to_numeric(values, errors='coerce').tolist()
     if log_transform:
         y_data = np.log10(y_data).tolist()
 
     y_axis_label = f'log({y_axis_label})' if log_transform else y_axis_label
 
-    # 确保sigma也是浮点数类型
+    
     sigma = pd.to_numeric(sigma, errors='coerce').tolist()
 
-    # 线性回归
+  
     X = np.array(sigma).reshape(-1, 1)
     y = np.array(y_data)
     reg = LinearRegression().fit(X, y)
@@ -64,7 +64,7 @@ def generate_hammett_plot(substituents, values, y_axis_label, log_transform, sig
 
     plot_image_path = plot_hammett(sigma, y_data, substituents, 'Hammett Plot', sigma_column, y_axis_label, slope, intercept, r_squared)
 
-    # 准备数据以JSON格式存储
+  
     data_json = {
         "substituent": substituents,
         y_axis_label: values,
@@ -73,7 +73,7 @@ def generate_hammett_plot(substituents, values, y_axis_label, log_transform, sig
         "R²": r_squared
     }
 
-    # 生成output.xlsx
+   
     output_path = os.path.join(upload_folder, 'output.xlsx')
     df_output = pd.DataFrame({
         'question': ['provide a simple mechanistic insights based on the Hammett analysis ,just analysis and interpretation.'],
