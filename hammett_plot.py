@@ -9,11 +9,14 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 import json
 
-def generate_hammett_plot(substituents, values, y_axis_label, log_transform, upload_folder):
+def generate_hammett_plot(substituents, values, y_axis_label, log_transform, sigma_type, upload_folder):
     # 读取data.xlsx
     data_file = 'Table_1.xlsx'
     df_data = pd.read_excel(data_file)
-    sigma_values = df_data.set_index('substituent')['σp'].to_dict()
+    
+    # 根据用户选择来获取σp或σm
+    sigma_column = 'σp' if sigma_type == 'p' else 'σm'
+    sigma_values = df_data.set_index('substituent')[sigma_column].to_dict()
 
     def plot_hammett(x_data, y_data, subs, title, xlabel, ylabel, slope, intercept, r_squared):
         plt.figure(figsize=(10, 6))
@@ -46,7 +49,7 @@ def generate_hammett_plot(substituents, values, y_axis_label, log_transform, upl
     if log_transform:
         y_data = np.log10(y_data).tolist()
 
-    y_axis_label = f'log({y_axis_label})'
+    y_axis_label = f'log({y_axis_label})' if log_transform else y_axis_label
 
     # 确保sigma也是浮点数类型
     sigma = pd.to_numeric(sigma, errors='coerce').tolist()
@@ -59,20 +62,23 @@ def generate_hammett_plot(substituents, values, y_axis_label, log_transform, upl
     intercept = reg.intercept_
     r_squared = r2_score(y, reg.predict(X))
 
-    plot_image_path = plot_hammett(sigma, y_data, substituents, 'Hammett Plot', 'σ', y_axis_label, slope, intercept, r_squared)
+    plot_image_path = plot_hammett(sigma, y_data, substituents, 'Hammett Plot', sigma_column, y_axis_label, slope, intercept, r_squared)
 
     # 准备数据以JSON格式存储
     data_json = {
         "substituent": substituents,
         y_axis_label: values,
-        "σ": sigma,
+        sigma_column: sigma,
         "ρ": slope,
         "R²": r_squared
     }
 
     # 生成output.xlsx
     output_path = os.path.join(upload_folder, 'output.xlsx')
-    df_output = pd.DataFrame({'data': [json.dumps(data_json, ensure_ascii=False)]})
+    df_output = pd.DataFrame({
+        'question': ['provide a simple mechanistic insights based on the Hammett analysis ,just analysis and interpretation.'],
+        'data': [json.dumps(data_json, ensure_ascii=False)]
+    })
     df_output.to_excel(output_path, index=False)
 
     return plot_image_path, output_path
