@@ -1,0 +1,147 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  margin: 0;
+  background-color: #c4f6ff;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #00796b;
+  position: relative;
+  z-index: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #00796b;
+  position: relative;
+  z-index: 1;
+}
+
+input[type="file"], select, input[type="text"] {
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+}
+
+button {
+  font-size: 1.25rem;
+  background-color: #009688;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+button:hover {
+  background-color: #00796b;
+}
+
+.button-container {
+  margin-top: 1rem;
+}
+
+.button-container button {
+  margin-top: 1rem;
+}
+
+.separator-text {
+  font-size: 2.50rem;
+  color: #00796b;
+  margin: 1rem 0;
+}
+
+.decoration {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.decoration1 {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 123, 255, 0.1);
+  top: -50px;
+  right: -50px;
+}
+
+.decoration2 {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(0, 150, 136, 0.1);
+  bottom: -50px;
+  left: -50px;
+}
+
+table th {
+  color: #00796b;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #e0f7fa;
+}
+
+.circle.top-right {
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  right: -50px;
+}
+
+.circle.bottom-left {
+  width: 150px;
+  height: 150px;
+  bottom: -75px;
+  left: -75px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+a {
+  font-size: 1.25rem;
+  background-color: #009688;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  margin: 1rem 0;
+}
+
+a:hover {
+  background-color: #00796b;
+}
